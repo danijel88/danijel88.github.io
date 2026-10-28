@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Danijel Boksan — Senior .NET Backend Engineer</title>
+<meta name="description" content="Senior .NET Backend Engineer. ASP.NET Core APIs, .NET Framework to .NET 8 migrations, Azure, SQL Server. 10+ years experience.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --text: #1f2328; --muted: #59636e;
+    --line: #e3e6ea; --accent: #512bd4; --accent-soft: #efeaff; --ok: #1a7f37;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0d1117; --card: #151b23; --text: #e6edf3; --muted: #9198a1;
+            --line: #2a313c; --accent: #a48bff; --accent-soft: #241d3d; --ok: #3fb950; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 15px/1.6 Inter, system-ui, -apple-system, Segoe UI, sans-serif; }
+  .page { max-width: 880px; margin: 40px auto; padding: 48px 56px; background: var(--card);
+          border: 1px solid var(--line); border-radius: 14px; }
+  header { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap;
+           border-bottom: 1px solid var(--line); padding-bottom: 24px; }
+  h1 { margin: 0; font-size: 32px; letter-spacing: -0.02em; }
+  .role { margin: 4px 0 0; color: var(--accent); font-weight: 600; font-size: 17px; }
+  .tagline { margin: 6px 0 0; color: var(--muted); }
+  .contact { list-style: none; margin: 0; padding: 0; text-align: right; font-size: 14px; color: var(--muted); }
+  .contact a { color: var(--text); text-decoration: none; border-bottom: 1px dotted var(--muted); }
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 24px 0 8px; }
+  .stat { background: var(--accent-soft); border-radius: 10px; padding: 12px 14px; }
+  .stat b { display: block; font-size: 20px; color: var(--accent); }
+  .stat span { font-size: 12.5px; color: var(--muted); }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted);
+       margin: 32px 0 12px; font-weight: 600; }
+  p { margin: 0 0 10px; }
+  ul { margin: 0; padding-left: 18px; }
+  li { margin: 4px 0; }
+  .wins { list-style: none; padding: 0; }
+  .wins li::before { content: "✓"; color: var(--ok); font-weight: 700; margin-right: 10px; }
+  .job { margin-bottom: 22px; }
+  .job-head { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .job h3 { margin: 0; font-size: 16px; }
+  .job .org { color: var(--muted); font-weight: 500; }
+  .date { font-family: "JetBrains Mono", monospace; font-size: 12.5px; color: var(--muted); }
+  .skills { display: grid; grid-template-columns: 150px 1fr; gap: 8px 16px; }
+  .skills dt { font-weight: 600; }
+  .skills dd { margin: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { font-size: 12.5px; padding: 2px 10px; border: 1px solid var(--line); border-radius: 999px; }
+  blockquote { margin: 0 0 12px; padding: 10px 16px; border-left: 3px solid var(--accent);
+               background: var(--accent-soft); border-radius: 0 8px 8px 0; font-style: italic; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  footer { margin-top: 36px; padding-top: 18px; border-top: 1px solid var(--line);
+           color: var(--muted); font-size: 14px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  .print-btn { background: var(--accent); color: #fff; border: 0; border-radius: 8px;
+               padding: 8px 14px; font: inherit; font-weight: 600; cursor: pointer; }
+  @media (max-width: 720px) {
+    .page { margin: 0; padding: 28px 16px; border-radius: 0; border: 0; }
+    .contact { text-align: left; }
+    .stats { grid-template-columns: repeat(2, 1fr); }
+    .skills, .two { grid-template-columns: 1fr; }
+  }
+  @media print {
+    :root { --bg: #fff; --card: #fff; --text: #000; --muted: #444; --accent-soft: #f3f0ff; }
+    body { font-size: 12.5px; }
+    .page { margin: 0; padding: 0; border: 0; max-width: none; }
+    .print-btn { display: none; }
+    .job, blockquote { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+  <header>
+    <div>
+      <h1>Danijel Boksan</h1>
+      <p class="role">Senior .NET Backend Engineer</p>
+      <p class="tagline">ASP.NET Core APIs · .NET Framework → .NET 8 migrations · Azure</p>
+    </div>
+    <ul class="contact">
+      <li>Sombor, Serbia · Remote</li>
+      <li><a href="mailto:danijelboksan@gmail.com">danijelboksan@gmail.com</a></li>
+      <li><a href="https://github.com/danijel88">github.com/danijel88</a></li>
+      <li><a href="https://www.upwork.com/freelancers/~01db306d26fbd243f5">Upwork profile</a></li>
+      <li>Available 1pm–9pm US Eastern</li>
+    </ul>
+  </header>
+
+  <section class="stats">
+    <div class="stat"><b>10+ yrs</b><span>.NET experience</span></div>
+    <div class="stat"><b>2,000+</b><span>freelance hours</span></div>
+    <div class="stat"><b>100%</b><span>Job Success · Top Rated</span></div>
+    <div class="stat"><b>20 apps</b><span>migrated to .NET Core</span></div>
+  </section>
+
+  <h2>Summary</h2>
+  <p>I help companies keep their .NET systems fast, stable and up to date: new ASP.NET Core APIs, fixes in existing code, and migrations from .NET Framework to .NET 8. A clear estimate before I start, short updates during the work, and clean code in your repo from day one.</p>
+
+  <h2>Highlights</h2>
+  <ul class="wins">
+    <li>Migrated 20 legacy .NET Framework apps to .NET Core with zero downtime</li>
+    <li>REST APIs handling 1,000+ requests/day, saving one client 20 hours/week of manual work</li>
+    <li>Long-term engagements up to 1,100 hours with repeat clients</li>
+    <li>10+ years building internal .NET and ERP systems for an enterprise retail group</li>
+  </ul>
+
+  <h2>Experience</h2>
+  <div class="job">
+    <div class="job-head">
+      <h3>Software Developer &amp; IT Lead <span class="org">· Fiorano doo (Calzedonia Group)</span></h3>
+      <span class="date">Nov 2015 – Present</span>
+    </div>
+    <ul>
+      <li>Design, build and maintain internal web and desktop applications in C#/.NET and SQL Server</li>
+      <li>Integrate internal systems with Microsoft Dynamics NAV and coordinate with third-party vendors</li>
+      <li>Administer SQL Server: backups, performance and data integrity</li>
+      <li>Support end users and turn their feedback into improvements and bug fixes</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="job-head">
+      <h3>Freelance Senior .NET Engineer <span class="org">· Upwork</span></h3>
+      <span class="date">2018 – Present</span>
+    </div>
+    <ul>
+      <li><b>ASP.NET MVC long-term product development</b> (2018–2025, 1,100 hrs) — features and maintenance for a repeat client</li>
+      <li><b>Databricks, Python &amp; Grafana automation</b> (2025) — ETL pipelines and monitoring automation</li>
+      <li><b>ASP.NET MVC / Razor development</b> (2024–2025) — multi-month work on a production web app</li>
+      <li><b>.NET Core microservices &amp; Web API</b> (2019–2021) — backend development in a distributed team</li>
+      <li>Smaller engagements: .NET Core Identity customization, remote C# debugging, SQL Server setup</li>
+    </ul>
+  </div>
+
+  <h2>Skills</h2>
+  <dl class="skills">
+    <dt>Backend</dt><dd><span class="chip">C#</span><span class="chip">ASP.NET Core</span><span class="chip">.NET 6–10</span><span class="chip">Web API</span><span class="chip">ASP.NET MVC</span><span class="chip">Entity Framework</span><span class="chip">Dapper</span></dd>
+    <dt>Architecture</dt><dd><span class="chip">Microservices</span><span class="chip">Clean Architecture</span><span class="chip">DDD</span><span class="chip">CQRS</span><span class="chip">TDD</span></dd>
+    <dt>Cloud &amp; DevOps</dt><dd><span class="chip">Azure App Service</span><span class="chip">Azure Functions</span><span class="chip">Azure DevOps</span><span class="chip">Azure OpenAI</span><span class="chip">Docker</span><span class="chip">CI/CD</span></dd>
+    <dt>Data</dt><dd><span class="chip">SQL Server</span><span class="chip">Azure SQL</span><span class="chip">Python</span><span class="chip">PySpark</span><span class="chip">Databricks</span><span class="chip">ETL</span></dd>
+    <dt>Frontend</dt><dd><span class="chip">Angular</span><span class="chip">React</span><span class="chip">JavaScript</span></dd>
+  </dl>
+
+  <h2>What clients say</h2>
+  <blockquote>“Danijel is a solid developer who doesn't have ‘no’ in his vocabulary. He consistently tackled difficult problems without complaint and produced very good code.”</blockquote>
+  <blockquote>“Excellent communicator and hard worker. Very good programmer and good attention to detail.”</blockquote>
+
+  <div class="two">
+    <div>
+      <h2>Education</h2>
+      <p><b>Bachelor of Engineering (BEng)</b><br>Technical Faculty “Mihajlo Pupin” · 2007–2011</p>
+      <h2>Certifications</h2>
+      <p><b>Claude 101</b> · Anthropic · Jul 2026</p>
+    </div>
+    <div>
+      <h2>Languages</h2>
+      <p>English — fluent<br>Serbian — native</p>
+    </div>
+  </div>
+
+  <footer>
+    <span>Have a .NET, Python or data engineering project (Databricks, PySpark, ETL)? Send me a few lines and I'll reply with a first step and an estimate.</span>
+    <button class="print-btn" onclick="window.print()">Download PDF</button>
+  </footer>
+</main>
+</body>
+</html>
